@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} dichanger-php.daoapp.io
+RewriteCond %{REQUEST_URI} !^/di/test
+RewriteRule ^(.*)$ /di/test/$1 [L]
+
+</IfModule>
+
+# END WordPress
