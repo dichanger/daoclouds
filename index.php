@@ -1,7 +1,7 @@
 <?php
 	$str = $_SERVER['HTTP_HOST'];
 	$str2 = $_SERVER["REQUEST_URI"]; 	
-	$p = "/(*.)/";
+	$p = "/^(.*)/i";
 	$r = "/di$1";
 	$str3 = preg_replace($p,$r,$str2);
 	
